@@ -18,13 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+author: Maarten van Elst
 title: Stuff I do.
-# description: >- # this means to ignore newlines until "baseurl:"
-#  Stuff I do is a place on the web to dump thoughts about what I've done or experienced. A place for sciencey, musicy, or heavy stuff. It's for me, but also public for a reason: you're very welcome to share your thoughts about "the stuff" with me.
+description: >- # this means to ignore newlines until "baseurl:"
+  Stuff I do is a place on the web to dump thoughts about what I've done or experienced. A place for sciencey, musicy, or heavy stuff. It's for me, but also public for a reason: you're very welcome to share your thoughts about "the stuff" with me.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: maartenvanelst
-linkedin_username: maarten-van-elst
+# github_username: maartenvanelst
+# linkedin_username: maarten-van-elst
 
 # Build settings
 theme: minima
@@ -51,3 +52,8 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+minima:
+  social_links:
+    github: maartenvanelst
+    linkedin: maarten-van-elst
