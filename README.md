@@ -4,12 +4,15 @@ It's built using a slightly modified version of the [minima theme](https://githu
 
 after installing jekyll with bundle run a local preview
 
-`bundle exec jekyll serve`
+``` 
+bundle exec jekyll serve
+```
 
 if need be, bundle package for github pages can be updated
 
-`bundle update github-pages`
-
+```
+bundle update github-pages
+```
 
 ### To do list
 
