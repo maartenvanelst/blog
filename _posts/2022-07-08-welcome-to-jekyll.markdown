@@ -1,29 +1,14 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-date: 2022-07-08 15:43:14 +0200
-categories: jekyll update
+title: "Sample Text!"
+date: 2022-07-08
+categories: test
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+Hi! Welcome to my blog :)
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Whenever I feel like putting something online, you'll probably be able to find it here. Some of it might be in Dutch, some in English, depending on the topic and what I feel like when writing. Take a look around, or even better: share your honest, unsalted opinion with me. Below is a list of all entries in chronological order, but you should be able to navigate by category soon&trade;! 
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+___
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Stuff I do is a place on the web to dump thoughts about what I've done or experienced. A place for sciencey, musicy, or heavy stuff. It's for me, but also public for a reason: you're very welcome to share your thoughts about "the stuff" with me.
