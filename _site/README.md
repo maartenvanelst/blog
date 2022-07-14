@@ -16,6 +16,7 @@ bundle update github-pages
 
 ### To do list
 
-- [ ] [Automatic tags](http://www.jasonemiller.org/2020/12/23/tagging-posts-in-jekyll-minima.html)
-- [ ] Locked/private posts
+- [X] [Automatic tags](http://www.jasonemiller.org/2020/12/23/tagging-posts-in-jekyll-minima.html)
+- [ ] [Locked/private posts](https://github.com/MaxLaumeister/PageCrypt)
 - [ ] Nice custom footer
+- [ ] Comment feature

@@ -6,6 +6,8 @@ Copyright 2017 Long Qian
 Contact: lqian8@jhu.edu
 This script creates tags for your Jekyll blog hosted by Github page.
 No plugins required.
+
+Adapted by Maarten van Elst
 '''
 
 import glob
@@ -24,7 +26,6 @@ for filename in filenames:
 	f = open(filename, 'r')
 	crawl = False
 	for line in f:
-		print(line)
 		if crawl:
 			current_tags = line.strip().split(':')
 			if current_tags[0] == 'tags':
@@ -45,7 +46,7 @@ for filename in filenames:
 				crawl = False
 				break
 	f.close()
-total_tags = set(total_tags)
+total_tags_set = set(total_tags)
 
 old_tags = glob.glob(tag_dir + '*.md')
 for tag in old_tags:
@@ -54,10 +55,14 @@ for tag in old_tags:
 if not os.path.exists(tag_dir):
 	os.makedirs(tag_dir)
 
-for tag in total_tags:
+for tag in total_tags_set:
 	tag_filename = tag_dir + tag.replace(' ', '_') + '.md'
 	f = open(tag_filename, 'a')
 	write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
 	f.write(write_str)
 	f.close()
-print("Tags generated, count", total_tags.__len__())
+
+print("Tag\tcount\n-------------")
+for tag in total_tags_set:
+	print(f"{tag}\t", total_tags.count(tag))
+print("-------------\ntotal\t", total_tags_set.__len__())
