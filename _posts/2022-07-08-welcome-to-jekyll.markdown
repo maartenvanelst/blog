@@ -2,7 +2,7 @@
 layout: post
 title: "Sample Text!"
 date: 2022-07-08
-categories: test
+categories: test sample_text
 ---
 
 Hi! Welcome to my blog :)
