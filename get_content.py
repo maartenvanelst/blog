@@ -8,15 +8,14 @@ the original author is marked in the comments.
 import os
 import glob
 import shutil
-import subprocess
 
 if __name__ == '__main__':
 	''' This script should:
-		[_] copy posts to target dir
+		[X] copy posts to target dir
 		[_] Convert all image assets to .png
 		[_] Replace markdown image headers with base64 version of png data
 		[_] Encrypt markdown content in correct posts using the javascript encryption
-		[_] Do success check on relevant posts
+		[_] Sanity check relevant posts
 	'''
 
 	ORIGIN_DIR = '../blog-src/_posts'
@@ -37,12 +36,12 @@ if __name__ == '__main__':
 	Adapted by Maarten van Elst
 	'''
 
-	post_dir = '_posts/'
-	draft_dir = '_drafts/'
-	tag_dir = 'tag/'
+	POST_DIR = '_posts/'
+	DRAFT_DIR = '_drafts/'
+	TAG_DIR = 'tag/'
 
-	filenames = glob.glob(post_dir + '*md')
-	filenames = filenames + glob.glob(draft_dir + '*md')
+	filenames = glob.glob(POST_DIR + '*.md')
+	filenames = filenames + glob.glob(DRAFT_DIR + '*.md')
 
 	total_tags = []
 
@@ -72,15 +71,15 @@ if __name__ == '__main__':
 		f.close()
 	total_tags_set = set(total_tags)
 
-	old_tags = glob.glob(tag_dir + '*.md')
+	old_tags = glob.glob(TAG_DIR + '*.md')
 	for tag in old_tags:
 		os.remove(tag)
 
-	if not os.path.exists(tag_dir):
-		os.makedirs(tag_dir)
+	if not os.path.exists(TAG_DIR):
+		os.makedirs(TAG_DIR)
 
 	for tag in total_tags_set:
-		tag_filename = tag_dir + tag.replace(' ', '_') + '.md'
+		tag_filename = TAG_DIR + tag.replace(' ', '_') + '.md'
 		f = open(tag_filename, 'a')
 		write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
 		f.write(write_str)

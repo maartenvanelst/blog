@@ -5,21 +5,12 @@
 	<div class="wrapper">
 		<div class="footer-col-wrapper">
 			<div class="footer-col">
-				{%- if site.author %}
-				<ul class="contact-list">
-					{% if site.author.name -%}
-					<li class="p-name">{{ site.author.name | escape }}</li>
-					{% endif -%}
-					{% if site.author.email -%}
-					<li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-					{%- endif %}
-				</ul>
-				{%- endif %}
-			</div>
-			<div class="footer-col">
 				<div class="social-links">
+					<p>
+						Find me here:&nbsp;
 					{%- if social.github -%}<a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" target="_blank" title="{{ social.github | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
 					{%- if social.linkedin -%}<a rel="me" href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}" target="_blank" title="{{ social.linkedin | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>{%- endif -%}
+					</p>
 				</div>
 			</div>
 		</div>

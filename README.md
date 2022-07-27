@@ -1,6 +1,6 @@
 This is the Github README for [https://maartenvanelst.github.io/blog/](https://maartenvanelst.github.io/blog/). 
 
-It's built using a slightly modified version of the [minima theme](https://github.com/jekyll/minima).
+It's built using a slightly modified version of a static jekyll site using the [minima theme](https://github.com/jekyll/minima).
 
 after installing jekyll with bundle run a local preview
 
